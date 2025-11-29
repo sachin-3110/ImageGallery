@@ -8,7 +8,7 @@ const Image = () => {
   const imgApiHit = async () => {
     try {
     setLoading(true)
-      const res = await fetch("https://picsum.photos/v2/list?page=7&limit=50");
+      const res = await fetch("https://picsum.photos/v2/list?page=7&limit=20");
       const data = await res.json();
       setImages(data);
     } catch (error) {
